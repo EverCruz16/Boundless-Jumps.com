@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Boundless Jumps</title>
@@ -10,64 +10,87 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <style>
+        body {
+            background: #0f0f0f;
+        }
+    </style>
 </head>
   
-    <body>
-      <section id="header" class="header">
+<body>
+    <section id="header" class="header">
         <div class="nav-bar">
-          <div class="logo">
-            <a href="https://www.facebook.com/boundlessjumps/?ref=page_internal" target="_blank">
-              <img src="BLJ_LOGO.png" alt="BLJ Logo" height="150">
-            </a>
-          </div>
-          <div class="menu">
-            <ul>
-              <li><a href="#" class="active">Home<span>.</span></a></li>
-              <li><a href="https://www.facebook.com/boundlessjumps/reviews/?ref=page_internal" target="_blank">Reviews</a></li>
-            </ul>
-          </div>
-          <div class="social-media">
-            <ul>
-              <li><a href="https://www.facebook.com/boundlessjumps/?ref=page_internal" target="_blank"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="mailto:boundlessjumps@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="hero">
-          <div class="row">
-            <div class="left-sec">
-              <div class="content">
-                <h2><span>Boundless</span><br>Jumps</h2>
-                <p>BLJ is a moon bounce/bounce house retail business. Moon Bounce or Bounce House is a springy inflatable structure often resembling a four-sided building and used especially by children for jumping for sport or for a celebration. 
-                </p>
-              </div>
-              <button class="discover-btn">
-                <a href="https://www.facebook.com/boundlessjumps/reviews/?ref=page_internal" target="_blank">Reviews</a><a href="https://www.facebook.com/boundlessjumps/reviews/?ref=page_internal" target="_blank"><span><i class="fa fa-arrow-circle-o-right" ></i></span></a>
-              </button>
+            <div class="logo">
+                <a href="https://www.facebook.com/boundlessjumps/?ref=page_internal" target="_blank">
+                    <img src="BLJ_LOGO.png" alt="BLJ Logo" height="150">
+                </a>
             </div>
-            <div class="right-sec">
-              <div class="my-car">
-                <div><img src="c1.png"></div>
-                <div><img src="c2.png"></div>
-              </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#" class="active">Home<span>.</span></a></li>
+                    <li><a href="https://www.facebook.com/boundlessjumps/reviews/?ref=page_internal" target="_blank">Reviews</a></li>
+                </ul>
             </div>
-          </div>
+            <div class="social-media">
+                <ul>
+                    <li><a href="https://www.facebook.com/boundlessjumps/?ref=page_internal" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="mailto:boundlessjumps@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a></li>
+                </ul>
+            </div>
+            <nav class="phone-link-list">
+                <ul id="menulist">
+                    <li><a href="">dfgfdg--</a></li>
+                    <li><a href="https://www.facebook.com/boundlessjumps" target="_blank">ggdfg--</a></li>
+                    <li><a href="">ggf--</a></li>
+                    <li><a href="">dfgdfg--</a></li>
+                </ul>
+            </nav>
+            <img src="menu.png" alt="menu Logo" height="29" class="menu-icon" onclick="togglemenu()">
         </div>
-      </section> 
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
-      <script type="text/javascript">
-        $(document).ready(function(){
-          $(".my-car").slick({
-            autoplay:true,
-            dots:true,
-            speed:1000,
-            customPaging : function(slider, i) {
-              var thumb = $ (slider.$slides[i]).data();
-              return '<a>'+(i+1)+'</a>';
-            },
-          })
-        });
-      </script>
-    </body>
+
+
+        <div class="row">
+            <div class="col-1">
+                <h2>BLJ<br />Boundless Jumps</h2>
+                <h3>Bounce Houses,Tables,Chairs,Tents</h3>
+                <p>(DMV Only/DC,Maryland,Virginia)</p>
+                <h4>$160-$100</h4>
+                <button type="button" onclick="location.href='mailto:boundlessjumps@gmail.com'">Email Us <span><i class="fa fa-arrow-circle-o-right"></i></span> </button>
+            </div>
+            <div class="col-2">
+                <img src="train1.png" class="Train" />
+                <div class="color-box"></div>
+                <div onclick="location.href='https://www.facebook.com/boundlessjumps/?ref=page_internal'" class="add-btn">
+                    <img src="add.png" />
+                    <p><small>Check It Out</small></p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <script>
+
+        var menulist = document.getElementById("menulist");
+
+        menulist.style.maxHeight = "0px";
+
+        function togglemenu() {
+            if (menulist.style.maxHeight == "0px") {
+                menulist.style.maxHeight = "130px";
+            }
+            else {
+                menulist.style.maxHeight = "0px";
+            }
+        }
+
+    </script>
+
+
+
+
+
+</body>
   </html>
